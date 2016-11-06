@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 7:15:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sport.Customer" table="customer" catalog="sport" optimistic-lock="version">
+        <id name="cid" type="java.lang.Integer">
+            <column name="CID" />
+            <generator class="identity" />
+        </id>
+        <property name="cfname" type="string">
+            <column name="Cfname" length="100" not-null="true" />
+        </property>
+        <property name="clname" type="string">
+            <column name="Clname" length="100" not-null="true" />
+        </property>
+        <property name="caddress" type="string">
+            <column name="Caddress" length="500" not-null="true" />
+        </property>
+        <property name="ctel" type="string">
+            <column name="Ctel" length="10" not-null="true" />
+        </property>
+        <property name="cemail" type="string">
+            <column name="Cemail" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
